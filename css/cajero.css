@@ -15,7 +15,7 @@ body{
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 650px;
+    width: 620px;
     border-radius: 10px;
     background-color: gray;
 }
@@ -53,26 +53,7 @@ body{
     
 }
 
-.costado2{
-    float: left;
-    margin: 5px;
-    height: 320px;
-    width: 70px;
-    
-    margin-right: 10px;
-}
-.eje2{
 
-    margin-top : 40px;
-}
-.eje2 button{
-    display: block;
-    border-radius: 5px;
-    margin: 0 auto;
-    float: left;
-    margin-top: 15px;
-    margin: 10px;
-}
 .pantalla{
     float: left;
     margin: 5px;
@@ -157,7 +138,7 @@ button{
     border: black 2px solid;
 }
 .cl{
-    background-color: yellow;
+    background-color: rgb(196, 196, 4);
     color: white;
     border: black 2px solid;
 }
@@ -174,27 +155,68 @@ button{
 
 .contenido2{
     float: right;
-    width: 325px;
+    width: 300px;
     height:  250px;
-    background-color: lightcoral; 
-}
-.uno{
-    color: white;
-    float: left;
-    
     
 }
-.dos{
-    color: white;
+.tarjeta{
+    width: 140px;
+    height: 80px;
+    
+    float: left;;
+}
+.tarjet{
+    width: 160px;
+    height: 80px;
+    
     float: right;
+}
+.card{
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    border: rgb(78, 77, 77) 10px solid;
+    top: 15px;
+}
+
+.receipt{
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    border: rgb(78, 77, 77) 10px solid;
+    top: 15px;
+
+}
+
+.tarjeta2{
+    width: 300px;
+    height: 80px;
+    
+    float: left;
+}
+.cash{
+    width: 240px;
+    height: 5px;
+    background-color: black;
+    border: rgb(78, 77, 77) 10px solid;
     
 }
-.tres {
+
+.tarjeta3{
+    width: 300px;
+    height: 90px;
+    
+    float: left;
+}
+.reposit{
+    width: 240px;
+    height: 5px;
+    background-color: black;
+    border: rgb(78, 77, 77) 10px solid;
+    top: 15px;
+}
+.contenido2 h2{
     color: white;
-    
 }
-.cuatro{
-    color: white;
+
     
-    
-}
