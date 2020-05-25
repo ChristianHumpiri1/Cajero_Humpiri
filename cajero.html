@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cajero</title>
+    <script src="https://kit.fontawesome.com/ba85238909.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/cajero.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
             </div>
             </div>
             <div class="pantalla" id="p1">
-                <h1>¡Bienvenido al Banco!</h1>
+                <h1 class="bien">¡Bienvenido al Banco!</h1>
                 <h2>Porfavor Digite su clave</h2>
                 <input type="password" class="nombre" id="per">
                 <p id="ingreso"></p>
@@ -101,7 +102,7 @@
 <div class="cabecera" style="display: none;"  id="p4">
     <div class="costado1" >
         <div class="eje">
-        <button class="c1" onclick="retiro2()" ></button>
+        <button class="c1"></button>
         <button class="c2" ></button>
         <button class="c3"></button>
         <button class="c4"></button>
@@ -126,13 +127,116 @@
     <div class="eje">
         <button class="d1"></button>
         <button class="d2"></button>
+        <button class="d3" onclick="retiro3()"></button>
+        <button class="d4"></button>
+    </div>
+</div>
+</div>
+<div class="cabecera" style="display: none;"  id="p5">
+    <div class="costado1" >
+        <div class="eje">
+        <button class="c1" ></button>
+        <button class="c2" ></button>
+        <button class="c3"></button>
+        <button class="c4"></button>
+    </div>
+    </div>
+    <div class="pantalla" >
+        <h1> retirar en multiplos de 10</h1>
+        S/.<input type="text" class="money" id="total" >
+        <h1 id="error" class="parra"></h1>
+        <div class="lado_i">
+        <div class="triangulo"><p class="izquierda"></p></div> 
+        <div class="triangulo"><p class="izquierda"></p></div>
+        <div class="triangulo"><p class="izquierda"></p></div> 
+        <div class="triangulo"><p class="izquierda"></p></div> 
+    </div>
+     <div class="lado_d">
+        <div class="triangulo2"></div><p class="derecha"></p>
+        <div class="triangulo2"></div><p class="derecha">confirmar</p>
+        <div class="triangulo2"></div><p class="derecha">corregir</p>
+        <div class="triangulo2"></div><p class="derecha">Cancelar</p>
+     </div>
+    </div>
+    <div class="costado2">
+    <div class="eje">
+        <button class="d1"></button>
+        <button class="d2" onclick="dinero()"></button>
         <button class="d3" ></button>
         <button class="d4"></button>
     </div>
 </div>
 </div>
-        <div class="navegar">
-            <div class="contenido">
+<div class="cabecera" style="display: none;"  id="p6">
+    <div class="costado1" >
+        <div class="eje">
+        <button class="c1" ></button>
+        <button class="c2" ></button>
+        <button class="c3"></button>
+        <button class="c4"></button>
+    </div>
+    </div>
+    <div class="pantalla" >
+        <h1> Transaccion Procesada</h1>
+         <h2>Desea hacer otra transaccion?</h2>
+        <div class="lado_i">
+        <div class="triangulo"><p class="izquierda"></p></div> 
+        <div class="triangulo"><p class="izquierda"></p></div>
+        <div class="triangulo"><p class="izquierda"></p></div> 
+        <div class="triangulo"><p class="izquierda"></p></div> 
+    </div>
+     <div class="lado_d">
+        <div class="triangulo2"></div><p class="derecha"></p>
+        <div class="triangulo2"></div><p class="derecha"></p>
+        <div class="triangulo2"></div><p class="derecha">Si</p>
+        <div class="triangulo2"></div><p class="derecha">No</p>
+     </div>
+    </div>
+    <div class="costado2">
+    <div class="eje">
+        <button class="d1"></button>
+        <button class="d2" ></button>
+        <button class="d3" onclick="retiro6()"></button>
+        <button class="d4" onclick="retiro5()"></button>
+    </div>
+</div>
+</div>
+<div class="cabecera" style="display: none;"  id="p7">
+    <div class="costado1" >
+        <div class="eje">
+        <button class="c1" ></button>
+        <button class="c2" ></button>
+        <button class="c3"></button>
+        <button class="c4"></button>
+    </div>
+    </div>
+    <div class="pantalla" >
+         <h1> Gracias</h1>
+         <h1>Hasta Luego</h1>
+        <div class="lado_i">
+        <div class="triangulo"><p class="izquierda"></p></div> 
+        <div class="triangulo"><p class="izquierda"></p></div>
+        <div class="triangulo"><p class="izquierda"></p></div> 
+        <div class="triangulo"><p class="izquierda"></p></div> 
+    </div>
+     <div class="lado_d">
+        <div class="triangulo2"></div><p class="derecha"></p>
+        <div class="triangulo2"></div><p class="derecha"></p>
+        <div class="triangulo2"></div><p class="derecha"></p>
+        <div class="triangulo2"></div><p class="derecha"></p>
+     </div>
+    </div>
+    <div class="costado2">
+    <div class="eje">
+        <button class="d1"></button>
+        <button class="d2" ></button>
+        <button class="d3" ></button>
+        <button class="d4"></button>
+    </div>
+</div>
+</div>
+        <div class="navegar" >
+            <div class="contenido" id="num">
                 <div class="teclas">
                 <div class="numeros">
                     <div>
@@ -164,6 +268,38 @@
                 </div>
             </div>
         </div>
+        <div class="contenido" style="display: none;"  id="num2">
+            <div class="teclas" >
+            <div class="numeros">
+                <div>
+                <button class="n1" id="s1">1</button>
+                <button class="n2" id="s2">2</button>
+                <button class="n3" id="s3">3</button>
+            </div>
+            <div>
+                <button class="n4" id="s4">4</button>
+                <button class="n5" id="s5">5</button>
+                <button class="n6" id="s6">6</button>
+            </div>
+            <div>
+                <button class="n7" id="s7">7</button>
+                <button class="n8" id="s8">8</button>
+                <button class="n9" id="s9">9</button>
+            </div>
+            <div>
+                <button class="nv" disabled>#</button>
+                <button class="n0" id="s0">0</button>
+                <button class="np" id="sp">.</button>
+            </div>
+            </div>
+            <div class="op">
+                <button class="ca" id="cancel">CANCEL</button>
+                <button class="cl" id="clear">CLEAR</button>
+                <button class="ok" id="okey" >OK</button>
+                <button class="v" disabled> </button>
+            </div>
+        </div>
+    </div>
             <div class="contenido2">
                  <div class="tarjeta">
                             <h2>CARD</h2>
