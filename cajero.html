@@ -48,13 +48,13 @@
             <div class="triangulo"><p class="izquierda">Retiro</p></div> 
             <div class="triangulo"><p class="izquierda">Consultas</p></div>
             <div class="triangulo"><p class="izquierda">Operaciones</p></div> 
-            <div class="triangulo"><p class="izquierda">hola</p></div> 
+            <div class="triangulo"><p class="izquierda"></p></div> 
         </div>
          <div class="lado_d">
             <div class="triangulo2"></div><p class="derecha">Tranferencia</p>
             <div class="triangulo2"></div><p class="derecha">empecemos</p>
             <div class="triangulo2"></div><p class="derecha">Movimientos</p>
-            <div class="triangulo2"></div><p class="derecha">hola</p>
+            <div class="triangulo2"></div><p class="derecha"></p>
          </div>
         </div>
         <div class="costado2">
@@ -143,8 +143,8 @@
     </div>
     <div class="pantalla" >
         <h1> retirar en multiplos de 10</h1>
-        S/.<input type="text" class="money" id="total" >
-        <h1 id="error" class="parra"></h1>
+     <div class="centro"> S/.<input type="text" class="money" id="total" >
+        <h1 id="error" class="parra"></h1></div>  
         <div class="lado_i">
         <div class="triangulo"><p class="izquierda"></p></div> 
         <div class="triangulo"><p class="izquierda"></p></div>
@@ -162,7 +162,7 @@
     <div class="eje">
         <button class="d1"></button>
         <button class="d2" onclick="dinero()"></button>
-        <button class="d3" ></button>
+        <button class="d3" onclick="corregir()"></button>
         <button class="d4"></button>
     </div>
 </div>
@@ -178,7 +178,7 @@
     </div>
     <div class="pantalla" >
         <h1> Transaccion Procesada</h1>
-         <h2>Desea hacer otra transaccion?</h2>
+         <h2 class="central">Desea hacer otra transaccion?</h2>
         <div class="lado_i">
         <div class="triangulo"><p class="izquierda"></p></div> 
         <div class="triangulo"><p class="izquierda"></p></div>
@@ -262,7 +262,7 @@
                 </div>
                 <div class="op">
                     <button class="ca" id="canc">CANCEL</button>
-                    <button class="cl" id="cle">CLEAR</button>
+                    <button class="cl" id="cle"onclick="denuevo()" >CLEAR</button>
                     <button class="ok" id="ok" onclick="login()">OK</button>
                     <button class="v" disabled> </button>
                 </div>

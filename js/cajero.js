@@ -204,7 +204,12 @@ function s0(){
         }
     }
 }
-
+function corregir() {
+    document.getElementById("total").value="";
+}
+function denuevo() {
+    document.getElementById("per").value="";
+}
 
 
  

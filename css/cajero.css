@@ -52,6 +52,9 @@ body{
     background-color: black;
     
 }
+.centro{
+    text-align: center;
+}
 .costado2{
     float: left;
     margin: 5px;
@@ -84,6 +87,7 @@ body{
 }
 .izquierda{
     padding-top: 26px;
+    color: brown;
 }
 .lado_d{
     width: 85px;
@@ -94,6 +98,8 @@ body{
 }
 .money{
     text-align: center;
+    border: 0px;
+    background-color: rgb(235, 235, 2)
 }
 .parra{
     text-align: center;
@@ -101,6 +107,10 @@ body{
 
 .derecha{
     padding-top: 26px;
+    color: brown;
+}
+.central{
+    text-align: center;
 }
 
 
