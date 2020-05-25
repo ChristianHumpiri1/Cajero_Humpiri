@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="cajas">
-        <div class="cabecera">
-            <div class="costado1" id="costa">
+        <div class="cabecera" id="p1">
+            <div class="costado1" >
                 <div class="eje">
-                <button class="c1" id="rero" onclick="retiro()" ></button>
-                <button class="c2"></button>
+                <button class="c1" ></button>
+                <button class="c2" ></button>
                 <button class="c3"></button>
                 <button class="c4"></button>
             </div>
@@ -21,61 +21,146 @@
                 <h1>¡Bienvenido al Banco!</h1>
                 <h2>Porfavor Digite su clave</h2>
                 <input type="password" class="nombre" id="per">
-                <p id="mensaje"></p>
+                <p id="ingreso"></p>
         </div>
-        <div class="pantalla2" id="p2">
-            <h1>MENU PRINCIPAL</h1>
-            <div class="triangulo"><p>Retiro</p></div> <div class="triangulo2"></div><p class="derecha">Tranferencia</p>
-            <div class="triangulo"><p>Consultas</p></div> <div class="triangulo2"></div><p class="derecha">empecemos</p>
-            <div class="triangulo"><p>Operaciones</p></div> <div class="triangulo2"></div><p class="derecha">Movimientos</p>
-            <div class="triangulo"><p></p></div> <div class="triangulo2"></div><p class="derecha"></p>
-        </div>
-        <div class="pantalla3" id="p3">
-            <h1>RETIRO</h1>
-            <div class="triangulo"><p>Retiro Soles</p></div>
-            <div class="triangulo"></div>
-            <div class="triangulo"></div>
-        </div>
-
-            <div class="costado1">
+            <div class="costado2">
             <div class="eje">
                 <button class="d1"></button>
                 <button class="d2"></button>
-                <button class="d3"></button>
+                <button class="d3" ></button>
                 <button class="d4"></button>
             </div>
         </div>
     </div>
+    <div class="cabecera" style="display: none;"  id="p2">
+        <div class="costado1" >
+            <div class="eje">
+            <button class="c1" onclick="retiro()"></button>
+            <button class="c2" ></button>
+            <button class="c3"></button>
+            <button class="c4"></button>
+        </div>
+        </div>
+        <div class="pantalla" >
+            <h1>MENU PRINCIPAL</h1>
+            <div class="lado_i">
+            <div class="triangulo"><p class="izquierda">Retiro</p></div> 
+            <div class="triangulo"><p class="izquierda">Consultas</p></div>
+            <div class="triangulo"><p class="izquierda">Operaciones</p></div> 
+            <div class="triangulo"><p class="izquierda">hola</p></div> 
+        </div>
+         <div class="lado_d">
+            <div class="triangulo2"></div><p class="derecha">Tranferencia</p>
+            <div class="triangulo2"></div><p class="derecha">empecemos</p>
+            <div class="triangulo2"></div><p class="derecha">Movimientos</p>
+            <div class="triangulo2"></div><p class="derecha">hola</p>
+         </div>
+        </div>
+        <div class="costado2">
+        <div class="eje">
+            <button class="d1"></button>
+            <button class="d2"></button>
+            <button class="d3" ></button>
+            <button class="d4"></button>
+        </div>
+    </div>
+</div>
+<div class="cabecera" style="display: none;"  id="p3">
+    <div class="costado1" >
+        <div class="eje">
+        <button class="c1" onclick="retiro2()"></button>
+        <button class="c2" ></button>
+        <button class="c3"></button>
+        <button class="c4"></button>
+    </div>
+    </div>
+    <div class="pantalla" >
+        <h1>RETIRO</h1>
+        <div class="lado_i">
+        <div class="triangulo"><p class="izquierda">Retiro Soles</p></div> 
+        <div class="triangulo"><p class="izquierda"></p></div>
+        <div class="triangulo"><p class="izquierda"></p></div> 
+        <div class="triangulo"><p class="izquierda"></p></div> 
+    </div>
+     <div class="lado_d">
+        <div class="triangulo2"></div><p class="derecha">Retiro Dolar</p>
+        <div class="triangulo2"></div><p class="derecha"></p>
+        <div class="triangulo2"></div><p class="derecha"></p>
+        <div class="triangulo2"></div><p class="derecha">Cancelar</p>
+     </div>
+    </div>
+    <div class="costado2">
+    <div class="eje">
+        <button class="d1"></button>
+        <button class="d2"></button>
+        <button class="d3" ></button>
+        <button class="d4"></button>
+    </div>
+</div>
+</div>
+<div class="cabecera" style="display: none;"  id="p4">
+    <div class="costado1" >
+        <div class="eje">
+        <button class="c1" onclick="retiro2()" ></button>
+        <button class="c2" ></button>
+        <button class="c3"></button>
+        <button class="c4"></button>
+    </div>
+    </div>
+    <div class="pantalla" >
+        <h1>RETIRO</h1>
+        <div class="lado_i">
+        <div class="triangulo"><p class="izquierda">S/.20</p></div> 
+        <div class="triangulo"><p class="izquierda">S/.150</p></div>
+        <div class="triangulo"><p class="izquierda">S/.300</p></div> 
+        <div class="triangulo"><p class="izquierda"></p></div> 
+    </div>
+     <div class="lado_d">
+        <div class="triangulo2"></div><p class="derecha">S/.100</p>
+        <div class="triangulo2"></div><p class="derecha">S/.200</p>
+        <div class="triangulo2"></div><p class="derecha">Otras cantidades</p>
+        <div class="triangulo2"></div><p class="derecha">Cancelar</p>
+     </div>
+    </div>
+    <div class="costado2">
+    <div class="eje">
+        <button class="d1"></button>
+        <button class="d2"></button>
+        <button class="d3" ></button>
+        <button class="d4"></button>
+    </div>
+</div>
+</div>
         <div class="navegar">
             <div class="contenido">
                 <div class="teclas">
                 <div class="numeros">
                     <div>
-                    <button class="n1">1</button>
-                    <button class="n2">2</button>
-                    <button class="n3">3</button>
+                    <button class="n1" id="t1">1</button>
+                    <button class="n2" id="t2">2</button>
+                    <button class="n3" id="t3">3</button>
                 </div>
                 <div>
-                    <button class="n4">4</button>
-                    <button class="n5">5</button>
-                    <button class="n6">6</button>
+                    <button class="n4" id="t4">4</button>
+                    <button class="n5" id="t5">5</button>
+                    <button class="n6" id="t6">6</button>
                 </div>
                 <div>
-                    <button class="n7">7</button>
-                    <button class="n8">8</button>
-                    <button class="n9">9</button>
+                    <button class="n7" id="t7">7</button>
+                    <button class="n8" id="t8">8</button>
+                    <button class="n9" id="t9">9</button>
                 </div>
                 <div>
-                    <button class="nv">#</button>
-                    <button class="n0">0</button>
-                    <button class="np">.</button>
+                    <button class="nv" disabled>#</button>
+                    <button class="n0" id="t0">0</button>
+                    <button class="np" id="tp">.</button>
                 </div>
                 </div>
                 <div class="op">
-                    <button class="ca" >CANCEL</button>
-                    <button class="cl">CLEAR</button>
-                    <button id="boton"  class="ok" onclick="login()">OK</button>
-                    <button class="v"> </button>
+                    <button class="ca" id="canc">CANCEL</button>
+                    <button class="cl" id="cle">CLEAR</button>
+                    <button class="ok" id="ok" onclick="login()">OK</button>
+                    <button class="v" disabled> </button>
                 </div>
             </div>
         </div>
